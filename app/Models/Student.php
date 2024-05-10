@@ -15,5 +15,8 @@ class Student extends Model
         'name',
         'address',
         'telNo'
-    ];   
+    ]; 
+    public function grade(){
+        return $this->belongsTo(grade_table::class);
+    }
 }
